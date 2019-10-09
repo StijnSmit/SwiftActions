@@ -13,6 +13,7 @@ jobs:
     - name: Build and Run
       run: |
         swift --version
+        swiftlint help
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
