@@ -1,0 +1,19 @@
+name: Swiftlint
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Build and Run
+      run: |
+        swift --version
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
